@@ -1,6 +1,13 @@
 loadstring(game:HttpGet'https://raw.githubusercontent.com/Ukrainetap/Ukraine.tap/main/Ukraine%20Loader')()
-wait(5)
 
+game.StarterGui:SetCore("SendNotification", {
+ Title = "Ukraine.win";
+ Text = "Welcome to Ukraine.win!";
+ Icon = "rbxassetid://123802853";
+ Duration = 5;
+})
+
+wait(3)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 local Config = {
