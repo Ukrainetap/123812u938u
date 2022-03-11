@@ -787,7 +787,7 @@ game.StarterGui:SetCore("SendNotification", {
 
 wait(3)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-if game.PlaceId == 623823800 then
+if game.PlaceId == 301549746 then
 
 local Config = {
     WindowName = "Ukraine.Tap - Counter Blox",
