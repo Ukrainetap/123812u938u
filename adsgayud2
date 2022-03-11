@@ -9,6 +9,785 @@ game.StarterGui:SetCore("SendNotification", {
 
 wait(3)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+if game.PlaceId == 623823800 then
+
+local Config = {
+    WindowName = "Ukraine.Tap - Testing Multiple Game Support",
+	Color = Color3.fromRGB(122,31,198),
+	Keybind = Enum.KeyCode.Insert
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BracketV3.lua"))()
+local Window = Library:CreateWindow(Config, game:GetService("CoreGui"))
+
+local Tab1 = Window:CreateTab("Legit")
+local Tab2 = Window:CreateTab("Rage")
+local Tab3 = Window:CreateTab("Visuals")
+local Tab4 = Window:CreateTab("Misc")
+local Tab5 = Window:CreateTab("Exploits")
+local Tab6 = Window:CreateTab("Settings")
+
+local Section1 = Tab1:CreateSection("Aimbot")
+local Section2 = Tab1:CreateSection("Guns")
+local Section3 = Tab1:CreateSection("Others")
+local Section4 = Tab2:CreateSection("Ragebot")
+local Section5 = Tab2:CreateSection("Other")
+local Section6 = Tab2:CreateSection("Anti-Aim")
+
+local Section7 = Tab3:CreateSection("ESP")
+local Section8 = Tab3:CreateSection("Local")
+local Section9 = Tab3:CreateSection("Misc")
+local Section10 = Tab3:CreateSection("World")
+local Section11 = Tab3:CreateSection("Viewmodel")
+local Section12 = Tab4:CreateSection("Main")
+
+local Section13 = Tab4:CreateSection("Players")
+local Section14 = Tab4:CreateSection("Movement")
+local Section15 = Tab4:CreateSection("Other")
+local Section17 = Tab4:CreateSection("Meme Features")
+local Section18 = Tab5:CreateSection("Main")
+
+local Section19 = Tab5:CreateSection("Gun Mod")
+local Section20 = Tab6:CreateSection("Menu")
+local Section22 = Tab6:CreateSection("Other")
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+makefolder("UkraineCFG")
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Toggle1 = Section1:CreateToggle("Enabled", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section1:CreateToggle("Aim Assist", nil, function(State)
+	print(State)
+end)
+Toggle1:CreateKeybind("key", function(Key)
+	print(Key)
+end)
+
+local Toggle1 = Section1:CreateToggle("Visible only", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section1:CreateToggle("Jump check", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section1:CreateToggle("Triggerbot", nil, function(State)
+	print(State)
+end)
+Toggle1:CreateKeybind("key", function(Key)
+	print(Key)
+end)
+
+local Toggle1 = Section2:CreateToggle("Silent Aim", nil, function(State)
+	print(State)
+end)
+Toggle1:AddToolTip("Bannable use at risk")
+Toggle1:CreateKeybind("key", function(Key)
+	print(Key)
+end)
+
+local Toggle1 = Section2:CreateToggle("Body Aim", nil, function(State)
+	print(State)
+end)
+
+local Slider1 = Section2:CreateSlider("Aim Assist FOV", 0,500,nil,true, function(Value)
+	print(Value)
+end)
+Slider1:AddToolTip("FOV the player needs to be in to be able to Assist your Aim.")
+Slider1:SetValue(125)
+
+local Slider1 = Section2:CreateSlider("Silent Aim FOV", 0,500,nil,true, function(Value)
+	print(Value)
+end)
+Slider1:AddToolTip("FOV the player needs to be in to be able to Assist your Aim.")
+Slider1:SetValue(125)
+
+local Dropdown1 = Section1:CreateDropdown("Weapons", {"Rifles","Pistols","SMGS","Snipers","Other"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Rifles")
+
+local Toggle1 = Section3:CreateToggle("Auto Pistol", nil, function(State)
+	print(State)
+end)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Toggle1 = Section4:CreateToggle("Enabled", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section4:CreateToggle("Old Ray Method", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section4:CreateToggle "Knife bot", nil, function(State)
+	print(State)
+end
+
+local Toggle1 = Section4:CreateToggle("Hitpart", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section4:CreateToggle("From Camera", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section4:CreateToggle("Resolve Angles", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section4:CreateToggle("Rage Force Priority", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section4:CreateToggle("From Camera", nil, function(State)
+	print(State)
+end)
+
+local Dropdown1 = Section4:CreateDropdown("Weapons", {"Autosniper","Scout","AWP","Rifles", "Heavy Pistols", "Pistols", "Other"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Autosniper")
+
+local Slider3 = Section4:CreateSlider("Minimum Damage",1,100,nil,true, function(Value)
+end)
+Slider3:SetValue(1)
+
+local Toggle1 = Section5:CreateToggle("Kill All", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section5:CreateToggle("Slide Walk", nil, function(State)
+	print(State)
+end)
+
+
+local Toggle1 = Section5:CreateToggle("Fake Duck", nil, function(State)
+	print(State)
+end)
+Toggle1:CreateKeybind("V", function(Key)
+	print(Key)
+end)
+
+local Toggle1 = Section5:CreateToggle("Quickpeek", nil, function(State)
+	print(State)
+end)
+Toggle1:CreateKeybind("LALT", function(Key)
+	print(Key)
+end)
+
+local Toggle1 = Section6:CreateToggle("Enabled", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section6:CreateToggle("Remove Head", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section6:CreateToggle "Spectator Anti Aim", nil, function(State)
+	print(State)
+end
+
+local Toggle1 = Section6:CreateToggle("Manual Indicators", nil, function(State)
+	print(State)
+end)
+
+local Dropdown1 = Section6:CreateDropdown("Pitch", {"None","Down","Up","180"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("None")
+
+local Dropdown1 = Section6:CreateDropdown("Yaw", {"None","Manual","Backwards","Spin", "Random"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("None")
+
+local Dropdown1 = Section6:CreateDropdown("Roll", {"None","Upside Down","Sideways"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("None")
+
+local Slider3 = Section6:CreateSlider("Manual Yaw Offset",0,10,nil,true, function(Value)
+end)
+Slider3:SetValue(0)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Toggle1 = Section7:CreateToggle("Enabled", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section7:CreateToggle("Chams", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section7:CreateColorpicker("Chams Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section7:CreateToggle("Box ESP", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section7:CreateColorpicker("Box Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section7:CreateToggle("Name ESP", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section7:CreateColorpicker("Name Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section7:CreateToggle("Weapon ESP", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section7:CreateColorpicker("Weapon Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section7:CreateToggle("Health Bar", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section7:CreateColorpicker("Health Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section7:CreateToggle("Outline", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section7:CreateToggle("Visible Only", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section7:CreateToggle("Radar Reveal", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section7:CreateToggle("Teamates", nil, function(State)
+	print(State)
+end)
+
+local Dropdown1 = Section7:CreateDropdown("Font", {"Ui","System","Plex","Monospace"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Ui")
+
+local Dropdown1 = Section7:CreateDropdown("Text Mode", {"Default","Uppercase","Lowercase"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Ui")
+
+local Toggle1 = Section8:CreateToggle("Force Crosshair", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section8:CreateToggle("Remove UI Elements", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section8:CreateToggle("Remove Radio Commands", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section8:CreateToggle("Remove Flash", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section8:CreateToggle("Remove Hats", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section8:CreateToggle("Remove Sleeves", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section8:CreateToggle("Self Chams", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section8:CreateColorpicker("Self Chams", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Dropdown1 = Section8:CreateDropdown("Self Chams Material", {"SmoothPlastic","ForceField"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("SmoothPlastic")
+
+local Toggle1 = Section8:CreateToggle("Arm Chams", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section8:CreateColorpicker("Arm Chams", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Dropdown1 = Section8:CreateDropdown("Arm Chams Material", {"SmoothPlastic","ForceField", "Glass"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("SmoothPlastic")
+
+local Toggle1 = Section8:CreateToggle("Weapon Chams", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section8:CreateColorpicker("Weapon Chams", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Dropdown1 = Section8:CreateDropdown("Weapon Chams Material", {"SmoothPlastic","ForceField", "Glass", "Neon"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("SmoothPlastic")
+
+local Slider3 = Section8:CreateSlider("Weapon Reflectance",0,100,nil,true, function(Value)
+end)
+Slider3:SetValue(0)
+
+local Toggle1 = Section8:CreateToggle("FOV Changer", nil, function(State)
+	print(State)
+end)
+
+local Slider3 = Section8:CreateSlider("FOV",50,120,nil,true, function(Value)
+end)
+Slider3:SetValue(50)
+
+local Toggle1 = Section8:CreateToggle("Aspect Ratio", nil, function(State)
+	print(State)
+end)
+
+local Slider3 = Section8:CreateSlider("Aspect Ratio",0,1,nil,false, function(Value)
+end)
+Slider3:SetValue(1)
+
+local Toggle1 = Section9:CreateToggle("Remove Scope", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section9:CreateToggle("Beams Face Camera", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section9:CreateToggle("Bullet Tracers", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section9:CreateColorpicker("Bullet Tracers", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section9:CreateToggle("Hit Chams", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section9:CreateColorpicker("Hit Chams", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section1:CreateToggle("Third Person", nil, function(State)
+	print(State)
+end)
+Toggle1:CreateKeybind("X", function(Key)
+	print(Key)
+end)
+
+local Slider3 = Section9:CreateSlider("Third Person Distance",5,15,nil,true, function(Value)
+end)
+Slider3:SetValue(10)
+
+local Dropdown1 = Section9:CreateDropdown("Tracer Mode", {"Part","Beam",}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Part")
+
+local TextBox1 = Section9:CreateTextBox("Beam Texture", "Beam Texture", true, function(Value)
+	print(Value)
+end)
+TextBox1:SetValue("")
+
+local Toggle3 = Section10:CreateToggle("Better Shadows", nil, function(State)
+end)
+local Toggle3 = Section10:CreateToggle("Gradient", nil, function(State)
+end)
+        
+local Colorpicker3 = Section10:CreateColorpicker("Gradient", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle3 = Section10:CreateToggle("Grenade Area", nil, function(State)
+end)
+                
+local Colorpicker3 = Section10:CreateColorpicker("Grenade Area", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section10:CreateToggle("Saturation", nil, function(State)
+	print(State)
+end)
+
+local Slider3 = Section10:CreateSlider("Saturation",0,100,nil,true, function(Value)
+end)
+Slider3:SetValue(0)
+
+local Toggle1 = Section10:CreateToggle("Time Changer", nil, function(State)
+	print(State)
+end)
+
+local Slider3 = Section10:CreateSlider("Time Changer",0,100,nil,true, function(Value)
+end)
+Slider3:SetValue(0)
+
+local Toggle1 = Section10:CreateToggle("Asus Walls", nil, function(State)
+	print(State)
+end)
+
+local Slider3 = Section10:CreateSlider("Asus Walls",0,100,nil,true, function(Value)
+end)
+Slider3:SetValue(0)
+
+local Toggle1 = Section10:CreateToggle("SkyBox Changer", nil, function(State)
+	print(State)
+end)
+
+local Dropdown1 = Section10:CreateDropdown("SkyBoxes", {"Purple Nebula","Night Sky", "Pink Daylight", "Morning Glow", "Setting Sun", "Elegant Morning", "Neptune", "Red Shift", "Aesthetic Night"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Purple Nebula")
+
+local Toggle1 = Section11:CreateToggle("Enabled", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section11:CreateToggle("Visualize Silent Angles", nil, function(State)
+	print(State)
+end)
+
+local Slider3 = Section11:CreateSlider("X",25,50,nil,true, function(Value)
+end)
+Slider3:SetValue(25)
+
+local Slider3 = Section11:CreateSlider("Y",25,50,nil,true, function(Value)
+end)
+Slider3:SetValue(25)
+
+local Slider3 = Section11:CreateSlider("Z",25,50,nil,true, function(Value)
+end)
+Slider3:SetValue(25)
+
+local Slider3 = Section11:CreateSlider("Roll",0,360,nil,true, function(Value)
+end)
+Slider3:SetValue(0)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Toggle1 = Section12:CreateToggle("Hitlogs", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section12:CreateToggle("Keybind Indicators", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section12:CreateToggle("Spectator List", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section12:CreateToggle("Watermark", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section12:CreateToggle("Old Gun Sounds", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section12:CreateToggle("Hitsound", nil, function(State)
+	print(State)
+end)
+
+local Dropdown1 = Section12:CreateDropdown("Hitsound", {"Bameware","Bubble", "Pick", "Pop", "Rust", "Sans", "Fart", "Big", "Vine", "Bruh", "Skeet", "Neverlose", "Fatality", "Bonk", "Moan"}, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Skeet")
+
+local Slider3 = Section12:CreateSlider("Hitsound Volume",1,100,nil,true, function(Value)
+end)
+Slider3:SetValue(1)
+
+local Toggle1 = Section12:CreateToggle("Backtrack", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section12:CreateColorpicker("Backtrack Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Slider3 = Section12:CreateSlider("Backtrack m/s",50,500,nil,true, function(Value)
+end)
+Slider3:SetValue(50)
+
+local Dropdown1 = Section12:CreateDropdown("Backtrack" , {"Parts", "Characters" }, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Parts")
+
+local Button1 = Section12:CreateButton("Unlock Inventory", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukrainetap/Ukraine.tap/main/unlock%20all', true))()
+end)
+
+local Dropdown1 = Section13:CreateDropdown("Player", {"Nil","Nil1", "Nil2", "Nil3", "Nil4", "Nil5", "Nil6", "Nil7", "Nil8", "Nil9", "Nil10", "Nil11", "Nil12", "Nil13" }, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Nil")
+
+local Toggle1 = Section13:CreateToggle("Loop Kill", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section13:CreateToggle("Target Esp", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section13:CreateToggle("Ragebot Whitelist", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section13:CreateToggle("Ragebot Priority", nil, function(State)
+	print(State)
+end)
+
+local Colorpicker3 = Section13:CreateColorpicker("Target Box Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Colorpicker3 = Section13:CreateColorpicker("Target Name Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Colorpicker3 = Section13:CreateColorpicker("Target Weapon Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Colorpicker3 = Section13:CreateColorpicker("Target Tracer Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Colorpicker3 = Section13:CreateColorpicker("Target Health Bar Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Colorpicker3 = Section13:CreateColorpicker("Target Chams Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section14:CreateToggle("No Crouch Cooldown", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section14:CreateToggle("Auto Strafe", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section14:CreateToggle("Maintain Velocity", nil, function(State)
+	print(State)
+end)
+
+local Toggle1 = Section14:CreateToggle("Bunny Hop", nil, function(State)
+	print(State)
+end)
+
+local Slider3 = Section14:CreateSlider("",18,250,nil,true, function(Value)
+end)
+Slider3:SetValue(18)
+
+local Toggle1 = Section14:CreateToggle("Slow Walk", nil, function(State)
+end)
+Toggle1:CreateKeybind("LSHIFT", function(Key)
+end)
+
+local Slider3 = Section14:CreateSlider("",1,5,nil,true, function(Value)
+end)
+Slider3:SetValue(1)
+
+local Dropdown1 = Section14:CreateDropdown("Bunny Hop Method" , {"Velocity", "CFrame", "Gyro" }, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Velocity")
+
+local Toggle1 = Section15:CreateToggle("Remove Recoil", nil, function(State)
+end)
+
+local Toggle1 = Section15:CreateToggle("Remove Spread", nil, function(State)
+end)
+
+local Toggle1 = Section15:CreateToggle("Uncensor Chat", nil, function(State)
+end)
+
+local Toggle1 = Section15:CreateToggle("Chat Spammer", nil, function(State)
+end)
+
+local Dropdown1 = Section15:CreateDropdown("Standard" , {"Ukraine.win", "Custom" }, function(String)
+	print(String)
+end)
+Dropdown1:SetOption("Standard")
+
+local Button1 = Section15:CreateButton("Crash Server", function()
+end)
+
+local Toggle1 = Section17:CreateToggle("Override Game Movement", nil, function(State)
+end)
+
+local Slider4 = Section17:CreateSlider("Air Acceleration",1,25,nil,true, function(Value)
+end)
+Slider4:SetValue(10)
+
+local Toggle1 = Section17:CreateToggle("Drawing Enabled", nil, function(State)
+end)
+
+local Toggle1 = Section17:CreateToggle("Velocity Indicator", nil, function(State)
+end)
+
+local Colorpicker3 = Section17:CreateColorpicker("Velocity Graph Color", function(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+local Toggle1 = Section17:CreateToggle("Edgebug", nil, function(State)
+end)
+Toggle1:CreateKeybind("E", function(Key)
+end)
+
+local Toggle1 = Section17:CreateToggle("Jumpbug", nil, function(State)
+end)
+Toggle1:CreateKeybind("M3", function(Key)
+end)
+
+local Toggle1 = Section17:CreateToggle("Noclip", nil, function(State)
+end)
+Toggle1:CreateKeybind("V", function(Key)
+end)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Toggle1 = Section18:CreateToggle("Infinite Cash", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("Infinite Ammo", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("Instant Reload", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("Double Tap", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("Force Headshot", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("No Fall Damage", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("No Fire Damage", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("Anti Votekick", nil, function(State)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ukrainetap/Ukraine.tap/main/anti%20kick"))()
+end)
+
+local Toggle1 = Section18:CreateToggle("Obstruct Vision", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("Remove Walking Sound", nil, function(State)
+end)
+
+local Toggle1 = Section18:CreateToggle("Fake Lag", nil, function(State)
+end)
+
+local Slider4 = Section18:CreateSlider("",0,0.5,nil,false, function(Value)
+end)
+Slider4:SetValue(0.25)
+
+local Toggle1 = Section19:CreateToggle("Damage Modifier", nil, function(State)
+end)
+
+local Slider4 = Section19:CreateSlider("",1,5,nil,false, function(Value)
+end)
+Slider4:SetValue(1)
+
+local Toggle1 = Section19:CreateToggle("Minimum Damage", nil, function(State)
+end)
+
+local Slider4 = Section19:CreateSlider("",0,1,nil,false, function(Value)
+end)
+Slider4:SetValue(0)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Toggle3 = Section20:CreateToggle("UI Toggle", nil, function(State)
+	Window:Toggle(State)
+end)
+Toggle3:CreateKeybind(tostring(Config.Keybind):gsub("Enum.KeyCode.", ""), function(Key)
+	Config.Keybind = Enum.KeyCode[Key]
+end)
+Toggle3:SetState(true)
+
+local Colorpicker3 = Section20:CreateColorpicker("UI Color", function(Color)
+	Window:ChangeColor(Color)
+end)
+Colorpicker3:UpdateColor(Config.Color)
+
+-- credits to jan for patterns
+local Dropdown3 = Section20:CreateDropdown("Image", {"Default","Hearts","Abstract","Hexagon","Circles","Lace With Flowers","Floral"}, function(Name)
+	if Name == "Default" then
+		Window:SetBackground("2151741365")
+	elseif Name == "Hearts" then
+		Window:SetBackground("6073763717")
+	elseif Name == "Abstract" then
+		Window:SetBackground("6073743871")
+	elseif Name == "Hexagon" then
+		Window:SetBackground("6073628839")
+	elseif Name == "Circles" then
+		Window:SetBackground("6071579801")
+	elseif Name == "Lace With Flowers" then
+		Window:SetBackground("6071575925")
+	elseif Name == "Floral" then
+		Window:SetBackground("5553946656")
+	end
+end)
+Dropdown3:SetOption("Default")
+
+local Colorpicker4 = Section20:CreateColorpicker("Color", function(Color)
+	Window:SetBackgroundColor(Color)
+end)
+Colorpicker4:UpdateColor(Color3.new(1,1,1))
+
+local Slider3 = Section20:CreateSlider("Transparency",0,1,nil,false, function(Value)
+	Window:SetBackgroundTransparency(Value)
+end)
+Slider3:SetValue(0)
+
+local Slider4 = Section20:CreateSlider("Tile Scale",0,1,nil,false, function(Value)
+	Window:SetTileScale(Value)
+end)
+Slider4:SetValue(0.5)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local Button1 = Section22:CreateButton("Discord Server", function()
+	print("Saving to clipboard")
+	wait(1)
+	setclipboard("https://discord.gg/nvvvjjnePN")
+	toclipboard("https://discord.gg/nvvvjjnePN")
+end)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+if game.PlaceId == 301549746 then
+loadstring(game:HttpGet'https://raw.githubusercontent.com/Ukrainetap/Ukraine.tap/main/Ukraine%20Loader')()
+
+game.StarterGui:SetCore("SendNotification", {
+ Title = "Ukraine.win";
+ Text = "Welcome to Ukraine.win!";
+ Icon = "rbxassetid://123802853";
+ Duration = 5;
+})
+
+wait(3)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+if game.PlaceId == 623823800 then
 
 local Config = {
     WindowName = "Ukraine.Tap - Counter Blox",
@@ -774,3 +1553,4 @@ local Button1 = Section22:CreateButton("Discord Server", function()
 	toclipboard("https://discord.gg/nvvvjjnePN")
 end)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
