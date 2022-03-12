@@ -2,17 +2,15 @@ loadstring(game:HttpGet'https://raw.githubusercontent.com/Ukrainetap/Ukraine.tap
 
 game.StarterGui:SetCore("SendNotification", {
  Title = "Ukraine.win";
- Text = "Welcome to Ukraine.win Multiple Game Support!";
+ Text = "Welcome to Ukraine.win Rush Point!";
  Icon = "rbxassetid://123802853";
  Duration = 5;
 })
 
 wait(3)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-if game.PlaceId == 623823800 then
-
 local Config = {
-    WindowName = "Ukraine.Tap - Testing Multiple Game Support",
+    WindowName = "Ukraine.Tap | Rush Point | DEV
 	Color = Color3.fromRGB(122,31,198),
 	Keybind = Enum.KeyCode.Insert
 }
