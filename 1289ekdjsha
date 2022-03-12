@@ -10,7 +10,7 @@ game.StarterGui:SetCore("SendNotification", {
 wait(3)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local Config = {
-    WindowName = "Ukraine.Tap - Counter Blox",
+    WindowName = "Ukraine.Win | Counter Blox | Alpha Release V1.7",
 	Color = Color3.fromRGB(122,31,198),
 	Keybind = Enum.KeyCode.Insert
 }
