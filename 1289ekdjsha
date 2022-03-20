@@ -7,7 +7,9 @@ game.StarterGui:SetCore("SendNotification", {
 })
 
 wait(3)
-loadstring(game:HttpGet'https://pastebin.com/raw/6vk1tt5p')()
+
+getgenv().text = "Floppa.Vip"
+loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/gamesensewatermark.lua")()
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local Config = {
     WindowName = "Floppa.Vip | Counter Blox | Alpha Release V1.7",
