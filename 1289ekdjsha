@@ -1,7 +1,7 @@
 --Counter Blox
 game.StarterGui:SetCore("SendNotification", {
- Title = "Floppaware";
- Text = "Welcome to FloppaWare!";
+ Title = "Floppa.Vip";
+ Text = "Welcome to Floppa.Vip!";
  Icon = "rbxassetid://6837646276";
  Duration = 5;
 })
@@ -10,7 +10,7 @@ wait(3)
 loadstring(game:HttpGet'https://pastebin.com/raw/6vk1tt5p')()
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local Config = {
-    WindowName = "FloppaWare | Counter Blox | Alpha Release V1.7",
+    WindowName = "Floppa.Vip | Counter Blox | Alpha Release V1.7",
 	Color = Color3.fromRGB(122,31,198),
 	Keybind = Enum.KeyCode.Insert
 }
