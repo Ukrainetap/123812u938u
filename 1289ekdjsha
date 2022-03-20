@@ -625,7 +625,7 @@ end)
 local Toggle1 = Section15:CreateToggle("Chat Spammer", nil, function(State)
 end)
 
-local Dropdown1 = Section15:CreateDropdown("Standard" , {"FloppaWare", "Custom" }, function(String)
+local Dropdown1 = Section15:CreateDropdown("Standard" , {"Floppa.Vip", "Custom" }, function(String)
 	print(String)
 end)
 Dropdown1:SetOption("Standard")
