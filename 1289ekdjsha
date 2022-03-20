@@ -1,16 +1,16 @@
-loadstring(game:HttpGet'https://raw.githubusercontent.com/Ukrainetap/Ukraine.tap/main/Ukraine%20Loader')()
-
+--Counter Blox
 game.StarterGui:SetCore("SendNotification", {
- Title = "Ukraine.win";
- Text = "Welcome to Ukraine.win!";
- Icon = "rbxassetid://123802853";
+ Title = "Floppaware";
+ Text = "Welcome to FloppaWare!";
+ Icon = "rbxassetid://6837646276";
  Duration = 5;
 })
 
 wait(3)
+loadstring(game:HttpGet'https://pastebin.com/raw/6vk1tt5p')()
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local Config = {
-    WindowName = "Ukraine.Win | Counter Blox | Alpha Release V1.7",
+    WindowName = "FloppaWare | Counter Blox | Alpha Release V1.7",
 	Color = Color3.fromRGB(122,31,198),
 	Keybind = Enum.KeyCode.Insert
 }
@@ -277,7 +277,7 @@ Dropdown1:SetOption("Ui")
 local Dropdown1 = Section7:CreateDropdown("Text Mode", {"Default","Uppercase","Lowercase"}, function(String)
 	print(String)
 end)
-Dropdown1:SetOption("Ui")
+Dropdown1:SetOption("Default")
 
 local Toggle1 = Section8:CreateToggle("Force Crosshair", nil, function(State)
 	print(State)
@@ -625,7 +625,7 @@ end)
 local Toggle1 = Section15:CreateToggle("Chat Spammer", nil, function(State)
 end)
 
-local Dropdown1 = Section15:CreateDropdown("Standard" , {"Ukraine.win", "Custom" }, function(String)
+local Dropdown1 = Section15:CreateDropdown("Standard" , {"FloppaWare", "Custom" }, function(String)
 	print(String)
 end)
 Dropdown1:SetOption("Standard")
@@ -772,4 +772,3 @@ local Button1 = Section22:CreateButton("Discord Server", function()
 	setclipboard("https://discord.gg/nvvvjjnePN")
 	toclipboard("https://discord.gg/nvvvjjnePN")
 end)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
